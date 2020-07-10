@@ -8,11 +8,15 @@ on:
     - 'folder_1/**'
   pull_request:
 
+defaults:
+  run:
+    working-directory: folder_1
+
 jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
-    working-directory: ./folder_1
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v2
