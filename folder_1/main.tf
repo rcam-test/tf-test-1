@@ -11,6 +11,6 @@ terraform {
 
 resource "null_resource" "terraform-github-actions" {
   triggers = {
-    value = "This resource was created using GitHub Actions in Folder_1!"
+    value = "This resource was created using GitHub Actions in Folder_2!"
   }
 }
