@@ -4,6 +4,8 @@ on:
   push:
     branches:
     - devint
+    path:
+    - 'docs/**'
   pull_request:
 
 jobs:
