@@ -5,7 +5,7 @@ terraform {
     organization = "rcam-org"
 
     workspaces {
-      prefix = "tf-test-1"
+      name = "tf-test-1"
     }
   }
 }
