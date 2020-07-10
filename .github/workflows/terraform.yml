@@ -5,7 +5,7 @@ on:
     branches:
     - devint
     path:
-    - 'docs/**'
+    - 'folder_1/**'
   pull_request:
 
 jobs:
