@@ -22,10 +22,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Terraform Init
-      run: terraform init -input=false
-
-    - name: Terraform Workspace
-      run: terraform workspace select tf-test-1-folder-1
+      run: terraform init
 
     - name: Terraform Format
       run: terraform fmt -check
