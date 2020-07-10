@@ -1,10 +1,9 @@
-
 terraform {
   backend "remote" {
     organization = "rcam-org"
 
     workspaces {
-      name = "tf-test-1"
+      name = "tf-test-1-folder-1"
     }
   }
 }
