@@ -23,13 +23,17 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
+      working-directory: ./folder_1
 
     - name: Terraform Format
       run: terraform fmt -check
+      working-directory: ./folder_1      
 
     - name: Terraform Plan
       run: terraform plan
+      working-directory: ./folder_1
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/devint' && github.event_name == 'push'
       run: terraform apply -auto-approve
+      working-directory: ./folder_1
