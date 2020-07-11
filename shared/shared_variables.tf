@@ -7,5 +7,5 @@ variable "gateway_anycast_answers" {
 
 variable "ui_answers" {
   description = "OpenX UI IP address (ui.prod.gcp.openx.org)"
-  default     = ["4.3.2.1"]
+  default     = ["9.10.11.12"]
 }
