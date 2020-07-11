@@ -12,6 +12,12 @@ defaults:
   run:
     working-directory: folder_1
 
+env:
+  GOOGLE_PROJECT: ox-lab-robert-cam
+  GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_TOKEN }}
+  PRIVATE_KEY_ID: f16a48493732791209e80ceed674bad3c5376fc4
+
+
 jobs:
   terraform:
     name: 'Terraform'
