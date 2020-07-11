@@ -4,8 +4,9 @@ on:
   push:
     branches:
     - devint
-    path:
+    paths:
     - 'folder_1/**'
+    - 'shared/**'
   pull_request:
 
 defaults:
