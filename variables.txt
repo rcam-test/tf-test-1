@@ -3,6 +3,11 @@ variable "auto_repair" {
   default     = true
 }
 
+variable "auto_upgrade" {
+  default     = false
+  description = "when true, variable gke_cluster should not be set"
+}
+
 variable "disk_size_gb" {
   description = "Size of the disk attached to each node, specified in GB."
   default     = 100
@@ -147,11 +152,6 @@ variable "workload_identity_disabled" {
   description = "Set to false to enable workload identity. Nodepools need to have special metadata associated with workload identity"
   type        = bool
   default     = true
-}
-
-variable "auto_upgrade" {
-  default     = false
-  description = "when true, variable gke_cluster should not be set"
 }
 
 variable "zone" {
