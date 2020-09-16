@@ -3,6 +3,11 @@ variable "auto_repair" {
   default     = true
 }
 
+variable "auto_upgrade" {
+  default     = false
+  description = "when true, variable gke_cluster should not be set"
+}
+
 variable "disk_size_gb" {
   description = "Size of the disk attached to each node, specified in GB."
   default     = 100
