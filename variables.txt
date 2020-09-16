@@ -3,11 +3,6 @@ variable "auto_repair" {
   default     = true
 }
 
-variable "auto_upgrade" {
-  default     = false
-  description = "when true, variable gke_cluster should not be set"
-}
-
 variable "disk_size_gb" {
   description = "Size of the disk attached to each node, specified in GB."
   default     = 100
@@ -157,4 +152,9 @@ variable "workload_identity_disabled" {
 variable "zone" {
   default     = ""
   description = "(Optional) Zone, just a letter, to deploy nodepool to zonal cluster. Default is regional nodepool in var.region"
+}
+
+variable "auto_upgrade" {
+  default     = false
+  description = "when true, variable gke_cluster should not be set"
 }
